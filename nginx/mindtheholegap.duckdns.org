@@ -1,0 +1,29 @@
+server {
+    listen 443 ssl;
+    server_name mindtheholegap.duckdns.org www.mindtheholegap.duckdns.org;
+
+    ssl_certificate /etc/letsencrypt/live/mindtheholegap.duckdns.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/mindtheholegap.duckdns.org/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    root /var/www/html;
+    index index.html;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/html;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+server {
+    listen 80;
+    server_name mindtheholegap.duckdns.org www.mindtheholegap.duckdns.org;
+
+    location / {
+        return 301 https://$host:8443$request_uri;
+    }
+}
