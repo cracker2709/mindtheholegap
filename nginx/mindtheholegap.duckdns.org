@@ -14,6 +14,28 @@ server {
         root /var/www/html;
     }
 
+    # Block access to sensitive files and directories
+    location ~ /\.git {
+        deny all;
+        return 404;
+    }
+
+    location ~ /\. {
+        deny all;
+        return 404;
+    }
+
+    # Block access to backup and source files
+    location ~ ~$ {
+        deny all;
+    }
+
+    location ~ \.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist|env.*|yml|yaml)$ {
+        deny all;
+        return 404;
+    }
+
+    # Your main location block
     location / {
         try_files $uri $uri/ =404;
     }
