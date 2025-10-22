@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gap's Universe</title>
-  <meta name="description" content="Portfolio de Guillaume APCHAIN — DevOps Engineer. Infrastructure as Code, CI/CD, monitoring, cloud.">
+  <meta name="description"
+    content="Portfolio de Guillaume APCHAIN — DevOps Engineer. Infrastructure as Code, CI/CD, monitoring, cloud.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body data-theme="dark" class="bg-dark text-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4 reveal">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -27,26 +28,49 @@
   </nav>
 
   <div class="container">
-    <div class="card bg-dark border-secondary text-light p-4 mb-4">
+    <div class="card bg-dark border-secondary text-light p-4 mb-4 reveal">
       <div class="d-flex flex-column flex-md-row align-items-center">
-        <img src="assets/images/home.jpg" class="rounded-circle img-fluid mb-3 mb-md-0" width="150" alt="Photo de Guillaume">
+        <img src="assets/images/home.jpg" class="rounded-circle img-fluid mb-3 mb-md-0" width="150"
+          alt="Photo de Guillaume">
         <div class="ms-md-4">
           <h1 class="fw-bold">Guillaume APCHAIN</h1>
           <p>Ingénieur DevOps passionné par l'automatisation, la fiabilité et la sécurité des plateformes.</p>
-          <p>Passionné de musique, j’ai créé plusieurs playlists regroupant des titres issus des samplers des années 1990 / 2000.</p>
+          <p>Passionné de musique, j’ai créé plusieurs playlists regroupant des titres issus des samplers des années
+            1990 / 2000.</p>
         </div>
       </div>
     </div>
 
-    <div class="card bg-dark border-secondary text-light p-4">
+    <div class="card bg-dark border-secondary text-light p-4 reveal">
       <h2>Contact</h2>
       <p>Email : <a href="mailto:guillaume.apchain@gmail.com" class="text-info">guillaume.apchain@gmail.com</a></p>
       <p>Localisation : Lille, France</p>
       <p><a href="https://github.com/cracker2709" target="_blank" class="btn btn-outline-light btn-sm me-2">GitHub</a>
-         <a href="https://www.linkedin.com/in/guillaume-apchain-aa17506/" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a></p>
+        <a href="https://www.linkedin.com/in/guillaume-apchain-aa17506/" target="_blank"
+          class="btn btn-outline-info btn-sm">LinkedIn</a>
+      </p>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const reveals = document.querySelectorAll(".reveal");
+
+      const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        reveals.forEach(el => {
+          const boxTop = el.getBoundingClientRect().top;
+          if (boxTop < triggerBottom) {
+            el.classList.add("active");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // Trigger on load
+    });
+  </script>
 </body>
+
 </html>

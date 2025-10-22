@@ -301,3 +301,21 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+img.rounded-circle {
+  transition: transform 0.3s ease;
+}
+img.rounded-circle:hover {
+  transform: scale(1.05);
+}
+h1 {
+  animation: fadeInUp 1s ease forwards;
+}
