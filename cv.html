@@ -28,7 +28,7 @@
   </nav>
 
   <div class="container">
-    <div class="card bg-dark border-secondary text-light p-4 mb-4 text-center">
+    <div class="card bg-dark border-secondary text-light p-4 mb-4 text-center reveal">
       <img src="assets/images/gap.jpeg" width="150" class="rounded-circle mb-3">
       <h1>Guillaume APCHAIN</h1>
       <p class="lead">DevOps Engineer — Cloud | CI/CD | IaC | Observability</p>
@@ -40,12 +40,12 @@
 
     <div class="row">
       <div class="col-lg-8">
-        <div class="card bg-dark border-secondary text-light p-4 mb-4">
+        <div class="card bg-dark border-secondary text-light p-4 mb-4 reveal">
           <h2>À propos</h2>
           <p>Ingénieur DevOps passionné par l'automatisation, la fiabilité et la sécurité des plateformes. Expérience sur Azure/GCP, Kubernetes, Terraform, pipelines CI/CD et monitoring centralisé.</p>
         </div>
 
-        <div class="card bg-dark border-secondary text-light p-4 mb-4">
+        <div class="card bg-dark border-secondary text-light p-4 mb-4 reveal">
           <h2>Expérience</h2>
           <div class="mb-4">
             <h3><img src="assets/images/logo-revolice.png" width="70"/> Revolice / Leroy Merlin France</h3>
@@ -78,13 +78,13 @@
           </div>
         </div>
 
-        <div class="card bg-dark border-secondary text-light p-4 mb-4">
+        <div class="card bg-dark border-secondary text-light p-4 mb-4 reveal">
           <h2>Formation</h2>
           <p>Master Informatique — École 3IL (2001–2004)</p>
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-4 reveal">
         <div class="card bg-dark border-secondary text-light p-4 mb-4" id="contact">
           <h2>Contact</h2>
           <p>Email : <a href="mailto:guillaume.apchain@revolice.com" class="text-info">guillaume.apchain@revolice.com</a></p>
@@ -93,7 +93,7 @@
              <a href="https://www.linkedin.com/in/guillaume-apchain-aa17506/" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a></p>
         </div>
 
-        <div class="card bg-dark border-secondary text-light p-4 mb-4">
+        <div class="card bg-dark border-secondary text-light p-4 mb-4 reveal">
           <h2>Compétences</h2>
           <p><strong>Cloud :</strong> GCP, Azure, Kubernetes, Helm, Jenkins, Terraform, Docker, Ansible</p>
           <p><strong>Monitoring :</strong> Prometheus, Grafana, ELK</p>
@@ -101,13 +101,13 @@
           <p><strong>Autres :</strong> Linux, Microservices</p>
         </div>
 
-        <div class="card bg-dark border-secondary text-light p-4 mb-4">
+        <div class="card bg-dark border-secondary text-light p-4 mb-4 reveal">
           <h2>Certifications</h2>
           <p>Linux Foundation — Introduction To Kubernetes</p>
           <p>TOEIC</p>
         </div>
 
-        <div class="card bg-dark border-secondary text-light p-4">
+        <div class="card bg-dark border-secondary text-light p-4 reveal">
           <h2>Langues</h2>
           <p>Français (natif), Anglais (courant), Allemand (notions), Néerlandais (notions), Portugais (notions)</p>
         </div>
@@ -116,5 +116,23 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      reveals.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          el.classList.add("active");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Trigger on load
+  });
+  </script>
 </body>
 </html>
