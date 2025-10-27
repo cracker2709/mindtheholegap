@@ -35,9 +35,13 @@ server {
         return 404;
     }
 
-    # Your main location block
-    location / {
-        try_files $uri $uri/ =404;
+         # Try URI as-is, then with .html, then as a directory
+        try_files $uri $uri.html $uri/ =404;
+    }
+
+    location /assets/ {
+        # Serve static files directly
+        try_files $uri =404;
     }
 }
 
