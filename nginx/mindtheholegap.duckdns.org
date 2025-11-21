@@ -38,6 +38,25 @@ server {
          # Try URI as-is, then with .html, then as a directory
         try_files $uri $uri.html $uri/ =404;
     }
+    
+    location /compteur {
+        content_by_lua_block {
+        local visites = ngx.shared.visites
+        local ip = ngx.var.remote_addr
+
+        -- si l'IP n'a jamais visité, on compte
+        if visites:get(ip) == nil then
+            visites:set(ip, true)
+
+            local total = visites:get("total") or 0
+            total = total + 1
+            visites:set("total", total)
+        end
+
+        ngx.say(visites:get("total") or 1)
+        }
+    }
+
 
     location /assets/ {
         # Serve static files directly
