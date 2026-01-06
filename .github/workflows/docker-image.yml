@@ -1,0 +1,36 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout code
+        uses: actions/checkout@v2
+      -
+        name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9.19'
+      -
+        name: Build python wheel
+        run: |
+          python -m pip install --upgrade pip
+          bash packageLocally.sh
+
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v4
+
+        with:
+          image: cracker2709/my-quart-api
+          registry: docker.io
+          tag: latest
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
