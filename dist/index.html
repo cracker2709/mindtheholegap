@@ -49,14 +49,6 @@
         <a href="https://www.linkedin.com/in/guillaume-apchain-aa17506/" target="_blank"
           class="btn btn-outline-info btn-sm">LinkedIn</a>
       </p>
-      <p>Nombre de visites : <span id="v"></span></p>
-
-      <script>
-      fetch("/compteur")
-        .then(r => r.text())
-        .then(t => document.getElementById("v").innerText = t);
-      </script>
-
     </div>
   </div>
 
