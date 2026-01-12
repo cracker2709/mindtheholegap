@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/cracker2709/mindtheholegap/compare/v1.0.1...v1.0.2) (2026-01-12)
+
+
+### Bug Fixes
+
+* remove useless if ([c78cf46](https://github.com/cracker2709/mindtheholegap/commit/c78cf46abab9e20ce9feede8b974e064a8473b2e))
+
 ## [1.0.1](https://github.com/cracker2709/mindtheholegap/compare/v1.0.0...v1.0.1) (2026-01-12)
 
 
