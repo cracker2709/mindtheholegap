@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/cracker2709/mindtheholegap/compare/v1.0.0...v1.0.1) (2026-01-12)
+
+
+### Bug Fixes
+
+* wrong project & service name & wrong tag ([496ffa4](https://github.com/cracker2709/mindtheholegap/commit/496ffa490080a93485fafe0447adfb4c294caad9))
+
 # 1.0.0 (2026-01-12)
 
 
