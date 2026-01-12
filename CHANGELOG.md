@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/cracker2709/mindtheholegap/compare/v1.0.2...v1.0.3) (2026-01-12)
+
+
+### Bug Fixes
+
+* adjust deploy name ([d8f41ab](https://github.com/cracker2709/mindtheholegap/commit/d8f41ab4687157f3608b5991d63f6fe9160a534c))
+
 ## [1.0.2](https://github.com/cracker2709/mindtheholegap/compare/v1.0.1...v1.0.2) (2026-01-12)
 
 
