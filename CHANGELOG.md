@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/cracker2709/mindtheholegap/compare/v1.0.3...v1.0.4) (2026-01-14)
+
+
+### Bug Fixes
+
+* update nginx content security policy ([f8866b7](https://github.com/cracker2709/mindtheholegap/commit/f8866b729c00a73caed63880e57feb83e56660fa))
+
 ## [1.0.3](https://github.com/cracker2709/mindtheholegap/compare/v1.0.2...v1.0.3) (2026-01-12)
 
 
