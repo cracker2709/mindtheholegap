@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/cracker2709/mindtheholegap/compare/v1.0.7...v1.0.8) (2026-01-15)
+
+
+### Bug Fixes
+
+* restore csp rule for spotify ([d71b35f](https://github.com/cracker2709/mindtheholegap/commit/d71b35fa150255b8140d20ea81fd255b75d81f4b))
+
 ## [1.0.7](https://github.com/cracker2709/mindtheholegap/compare/v1.0.6...v1.0.7) (2026-01-15)
 
 
