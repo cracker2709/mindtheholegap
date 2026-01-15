@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/cracker2709/mindtheholegap/compare/v1.0.5...v1.0.6) (2026-01-15)
+
+
+### Bug Fixes
+
+* allow spotify framing ([38b177f](https://github.com/cracker2709/mindtheholegap/commit/38b177ffde13866eee499a291809c9b94497a62f))
+
 ## [1.0.5](https://github.com/cracker2709/mindtheholegap/compare/v1.0.4...v1.0.5) (2026-01-14)
 
 
