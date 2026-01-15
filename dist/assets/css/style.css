@@ -319,3 +319,6 @@ img.rounded-circle:hover {
 h1 {
   animation: fadeInUp 1s ease forwards;
 }
+.spotify-embed {
+  border-radius: 12px;
+}
