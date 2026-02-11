@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/cracker2709/mindtheholegap/compare/v1.0.8...v1.1.0) (2026-02-11)
+
+
+### Features
+
+* add certifications in cv ([8e03b6a](https://github.com/cracker2709/mindtheholegap/commit/8e03b6a322632436fe26fe7827dec83e113ceb8e))
+
 ## [1.0.8](https://github.com/cracker2709/mindtheholegap/compare/v1.0.7...v1.0.8) (2026-01-15)
 
 
