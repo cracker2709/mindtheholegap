@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/cracker2709/mindtheholegap/compare/v1.4.0...v1.5.0) (2026-04-02)
+
+
+### Features
+
+* ad docs folder ([0c1c650](https://github.com/cracker2709/mindtheholegap/commit/0c1c65012cf7cd88a977a05d0d0a9179ab60e2ce))
+
 # [1.4.0](https://github.com/cracker2709/mindtheholegap/compare/v1.3.0...v1.4.0) (2026-04-02)
 
 
