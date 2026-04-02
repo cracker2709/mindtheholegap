@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/cracker2709/mindtheholegap/compare/v1.3.0...v1.4.0) (2026-04-02)
+
+
+### Features
+
+* use github static sites ([6502336](https://github.com/cracker2709/mindtheholegap/commit/6502336e7191f98ae9ae240ee53c855da7d69f67))
+
 # [1.3.0](https://github.com/cracker2709/mindtheholegap/compare/v1.2.0...v1.3.0) (2026-04-02)
 
 
