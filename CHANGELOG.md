@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/cracker2709/mindtheholegap/compare/v1.5.0...v1.6.0) (2026-04-18)
+
+
+### Features
+
+* add new XP ([ff646d7](https://github.com/cracker2709/mindtheholegap/commit/ff646d727a09f7c8a142504d8b4cc145fa6d6cd3))
+
 # [1.5.0](https://github.com/cracker2709/mindtheholegap/compare/v1.4.0...v1.5.0) (2026-04-02)
 
 
